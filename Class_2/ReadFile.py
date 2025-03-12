@@ -4,4 +4,3 @@ ip_addresses = ip_file.read()
 print(ip_addresses)
 
 ip_file.close()
-#NOT WORKING
