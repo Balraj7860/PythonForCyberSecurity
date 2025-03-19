@@ -1,0 +1,925 @@
+    1  2025-01-20 15:45:00 sudo apt-get update
+    2  2025-01-20 15:45:40 sudo apt-get ubuntu-desktop
+    3  2025-01-20 15:46:21 sudo apt-get install ubuntu-desktop
+    4  2025-01-20 15:47:01 sudo reboot now
+    5  2025-01-20 15:47:42 ifconfig
+    6  2025-01-20 15:48:23 sudo apt install net-tools
+    7  2025-01-20 15:49:03 ifconfig
+    8  2025-01-20 15:49:44 ifconfig > ipaddress.txt
+    9  2025-01-20 15:50:24 ifconfig | tee -a ipaddress.txt
+   10  2025-01-20 15:51:05 ipconfig -a > ipaddress.txt
+   11  2025-01-20 15:51:46 ifconfig -a > ipaddress.txt
+   12  2025-01-20 15:52:26 cp /etc/a/* /etc/b/ 2> copyerror.log
+   13  2025-01-20 15:53:07 ls | more
+   14  2025-01-20 15:53:47 bash mytask.sh &
+   15  2025-01-20 15:54:28 ping www.google.com > /dev/null
+   16  2025-01-20 15:55:09 ping www.google.com > /dev/null $
+   17  2025-01-20 15:55:49 ping www.google.com $
+   18  2025-01-20 15:56:30 ping www.google.com
+   19  2025-01-20 15:57:10 ping www.google.com > ping.log $
+   20  2025-01-20 15:57:51 jobs
+   21  2025-01-20 15:58:32 ping www.google.com > /dev/null $
+   22  2025-01-20 15:59:12 ping www.google.com &
+   23  2025-01-20 15:59:53 jobs
+   24  2025-01-20 16:00:33 ping www.google.com > ping.log &
+   25  2025-01-20 16:01:14 ping www.amazon.com > ping.log &
+   26  2025-01-20 16:01:55 ping www.oreilly.com > ping.log &
+   27  2025-01-20 16:02:35 jobs
+   28  2025-01-20 16:03:16 fg 1
+   29  2025-01-20 16:03:56 history > workshop1log.txt
+   30  2025-01-20 13:04:37 uname
+   31  2025-01-20 13:05:18 uname --options
+   32  2025-01-20 13:05:58 uname --help
+   33  2025-01-20 13:06:39 uname -a
+   34  2025-01-20 13:07:19 uname -s
+   35  2025-01-20 13:08:00 uname -n
+   36  2025-01-20 13:08:41 nano argcnt.sh
+   37  2025-01-20 13:09:21 ./argcnt.sh hello
+   38  2025-01-20 13:10:02 chmod +x argcnt.sh
+   39  2025-01-20 13:10:42 ./argcnt.sh hello
+   40  2025-01-20 13:11:23 ./argcnt.sh this is "real live" test
+   41  2025-01-20 13:12:04 ./argcnt.sh this is a "real live" test
+   42  2025-01-20 13:12:44 nano argcnt.sh
+   43  2025-01-20 13:13:25 ./argcnt.sh this is a "real live" test
+   44  2025-01-20 13:14:05 nano argcnt.sh
+   45  2025-01-20 13:14:46 ./argcnt.sh this is a "real live" test
+   46  2025-01-20 13:15:27 nano argcnt.sh
+   47  2025-01-20 13:16:07 ./argcnt.sh this is a "real live" test
+   48  2025-01-20 13:16:48 nano argcnt.sh
+   49  2025-01-20 13:17:28 ./argcnt.sh this is a "real live" test
+   50  2025-01-20 13:18:09 nano argcnt.sh
+   51  2025-01-20 13:18:50 ./argcnt.sh this is a "real live" test
+   52  2025-01-20 13:19:30 ./mytask.sh &
+   53  2025-01-20 13:20:11 jobs
+   54  2025-01-20 13:20:51 fg 4
+   55  2025-01-20 13:21:32 fg 3
+   56  2025-01-20 13:22:13 bg 3
+   57  2025-01-20 13:22:53 bg 2
+   58  2025-01-20 13:23:34 jobs
+   59  2025-01-20 13:24:14 sudo apt-get install tree
+   60  2025-01-20 13:24:55 tree
+   61  2025-01-20 13:25:36 history >> workshop1log.txt
+   62  2025-01-21 13:26:16 touch frost.txt
+   63  2025-01-21 13:26:57 grep -R -i 'password' /home
+   64  2025-01-21 13:27:37 sudo grep -R -i 'password' /home
+   65  2025-01-21 13:28:18 grep 'T.o' frost.txt
+   66  2025-01-21 13:28:59 egrep 'T.?o' frost.txt
+   67  2025-01-21 13:29:39 grep 'T.?o' frost.txt
+   68  2025-01-21 13:30:20 egrep 'T.*o' frost.txt
+   69  2025-01-21 13:31:00 grep 'T.*o' frost.txt
+   70  2025-01-21 13:31:41 grep 'T.+o' frost.txt
+   71  2025-01-21 13:32:22 egrep 'T.+o' frost.txt
+   72  2025-01-21 13:33:02 egrep 'And be one (stranger|traveler), long i stood' frost.txt
+   73  2025-01-21 13:33:43 egrep -i 'And be one (stranger|traveler), long i stood' frost.txt
+   74  2025-01-21 13:34:23 egrep [a] frost.txt
+   75  2025-01-21 13:35:04 egrep [ab] frost.txt
+   76  2025-01-21 13:35:45 egrep [,] frost.txt
+   77  2025-01-21 13:36:25 egrep [A-F] frost.txt
+   78  2025-01-21 13:37:06 nano tags.txt
+   79  2025-01-21 13:37:46 egrep '<([A-Za-z]*)>.*</\1>' tags.txt
+   80  2025-01-21 13:38:27 cd workshop3
+   81  2025-01-21 13:39:08 ls
+   82  2025-01-21 13:39:48 nano deci.txt
+   83  2025-01-21 13:40:29 egrep '([0-9]*)\.(\1)' deci.txt
+   84  2025-01-21 13:41:09 egrep '([0-9]*).(\1)' deci.txt
+   85  2025-01-21 13:41:50 egrep '[0-9]*\.[0-9]*' deci.txt
+   86  2025-01-21 13:42:31 nano deci.txt
+   87  2025-01-21 13:43:11 egrep '[0-9]*\.[0-9]*' deci.txt
+   88  2025-01-21 13:43:52 nano deci.txt
+   89  2025-01-21 13:44:32 egrep '([0-9]*) is = to (\1)' deci.txt
+   90  2025-01-21 13:45:13 egrep '([0-9]+) is = to (\1)' deci.txt
+   91  2025-01-21 13:45:54 nano deci.txt
+   92  2025-01-21 13:46:34 egrep '([0-9]*) is = to (\1)' deci.txt
+   93  2025-01-21 13:47:15 egrep '^([0-9]*).(\1)$' deci.txt
+   94  2025-01-21 13:47:55 egrep '^([0-9]).(\1)$' deci.txt
+   95  2025-01-21 13:48:36 egrep '^[0-9].*[0-9]$' deci.txt
+   96  2025-01-21 13:49:17 egrep '^([0-9]*).*(\1)$' deci.txt
+   97  2025-01-21 13:49:57 nano ip.txt
+   98  2025-01-21 13:50:38 egrep '^10\.0\.0\.(26|134)$' ip.txt
+   99  2025-01-21 13:51:18 nano ninety.ttx
+  100  2025-01-21 13:51:59 nano ninety.txt
+  101  2025-01-21 13:52:40 egrep '^0x90 {3}&' ninety.txt
+  102  2025-01-21 13:53:20 egrep '^0x90\s* {3}&' ninety.txt
+  103  2025-01-21 13:54:01 egrep '^(0x90*){3}&' ninety.txt
+  104  2025-01-21 13:54:41 egrep '^(0x90* ){3}&' ninety.txt
+  105  2025-01-21 13:55:22 egrep '^(0x90\s*){3}&' ninety.txt
+  106  2025-01-21 13:56:03 egrep '^(0x90*){3,}&' ninety.txt
+  107  2025-01-21 13:56:43 egrep '^(0x90*){3,}' ninety.txt
+  108  2025-01-21 13:57:24 egrep '^(0x90\s*){3,}' ninety.txt
+  109  2025-01-21 13:58:04 history workshop3.txt
+  110  2025-01-21 13:58:45 history > workshop3.txt
+  111  2025-01-22 10:59:26 sudo apt update
+  112  2025-01-22 11:40:06 dpkg -l | grep -E "nginx|mysql-server|net-tools
+  113  2025-01-22 11:40:47 sudo apt install ngnix mysql-server net-tools -y
+  114  2025-01-22 11:42:27 sudo apt install nginx mysql-server net-tools -y
+  115  2025-01-22 11:42:08 nano ubuntubsi47.sh
+  116  2025-01-22 11:50:49 chmod +x ubuntubsi47.sh
+  117  2025-01-22 11:51:29 ./ubuntubsi47.sh
+  118  2025-01-22 11:51:10 nano ubuntubsi47.sh
+  119  2025-01-22 11:52:50 ./ubuntubsi47.sh
+  120  2025-01-22 11:52:31 nano ubuntubsi47.sh
+  121  2025-01-22 11:55:12 ./ubuntubsi47.sh
+  122  2025-01-22 11:56:52 nano ubuntubsi47.sh
+  123  2025-01-22 11:57:33 ./ubuntubsi47.sh
+  124  2025-01-22 11:58:13 nano ubuntu2bsi47.sh
+  125  2025-01-22 11:58:54 hostname
+  126  2025-01-22 11:59:35 nano ubuntu2bsi47.sh
+  127  2025-01-22 11:59:45 ps -ax | wc -l
+  128  2025-01-22 11:59:56 nano ubuntu2bsi47.sh
+  129  2025-01-22 11:59:58 ./ubuntubsi47.sh
+  130  2025-01-22 11:59:59 ./ubuntu2bsi47.sh
+  131  2025-01-22 12:00:58 chmod +x ubuntu2bsi47.sh
+  132  2025-01-22 12:01:38 ./ubuntu2bsi47.sh
+  133  2025-01-22 12:02:19 history > lab1.txt
+    1  2025-02-05 12:43:53 134  ls
+    2  2025-02-05 12:44:26 135  cd lab2
+    3  2025-02-05 12:44:59 136  ls
+    4  2025-02-05 12:45:33 137  history
+    5  2025-02-05 12:46:06 138  cs lab2
+    6  2025-02-05 12:46:39 139  cd lab2
+    7  2025-02-05 12:47:13 140  makdir command.txt
+    8  2025-02-05 12:47:46 141  touch command.txt
+    9  2025-02-05 12:48:19 142  ssh kali@kalihost
+   10  2025-02-05 12:48:53 143  sudo -i
+   11  2025-02-05 12:49:26 144  nano checkappbsi47.sh
+   12  2025-02-05 12:49:59 145  chmod +x checkappbsi47.sh
+   13  2025-02-05 12:50:33 146  ./checkappbsi47.sh
+   14  2025-02-05 12:51:06 147  nano checkappbsi47.sh
+   15  2025-02-05 12:51:39 148  ./checkappbsi47.sh
+   16  2025-02-05 12:52:13 149  flameshot hui
+   17  2025-02-05 12:52:46 150  flameshot gui
+   18  2025-02-05 12:53:19 151  nano servermonitorbsi47.sh
+   19  2025-02-05 12:53:53 152  chmod +x servermonitorbsi47.sh
+   20  2025-02-05 12:54:26 153  ./servermonitorbsi47.sh
+   21  2025-02-05 12:54:59 154  nano servermonitorbsi47.sh
+   22  2025-02-05 12:55:33 155  ./servermonitorbsi47.sh
+   23  2025-02-05 12:56:06 156  nano servermonitorbsi47.sh
+   24  2025-02-05 12:56:39 157  ./servermonitorbsi47.sh
+   25  2025-02-05 12:57:13 158  nano servermonitorbsi47.sh
+   26  2025-02-05 12:57:46 159  ./servermonitorbsi47.sh
+   27  2025-02-05 12:58:19 160  nano servermonitorbsi47.sh
+   28  2025-02-05 12:58:53 161  ./servermonitorbsi47.sh
+   29  2025-02-05 12:59:26 162  history > lab2log.txt
+    1  2025-02-06 11:23:00 sudo apt-get update
+    2  2025-02-06 11:24:28 sudo apt-get ubuntu-desktop
+    3  2025-02-06 11:25:57 sudo apt-get install ubuntu-desktop
+    4  2025-02-06 11:27:25 sudo reboot now
+    5  2025-02-06 11:28:54 ifconfig
+    6  2025-02-06 11:30:22 sudo apt install net-tools
+    7  2025-02-06 11:31:51 ifconfig
+    8  2025-02-06 11:33:19 ifconfig > ipaddress.txt
+    9  2025-02-06 11:34:48 ifconfig | tee -a ipaddress.txt
+   10  2025-02-06 11:36:16 ipconfig -a > ipaddress.txt
+   11  2025-02-06 11:37:45 ifconfig -a > ipaddress.txt
+   12  2025-02-06 11:39:13 cp /etc/a/* /etc/b/ 2> copyerror.log
+   13  2025-02-06 11:40:42 ls | more
+   14  2025-02-06 11:42:10 bash mytask.sh &
+   15  2025-02-06 11:43:39 ping www.google.com > /dev/null
+   16  2025-02-06 11:45:07 ping www.google.com > /dev/null $
+   17  2025-02-06 11:46:36 ping www.google.com $
+   18  2025-02-06 11:48:04 ping www.google.coma
+   19  2025-02-06 11:49:33 ping www.google.com > ping.log $
+   20  2025-02-06 11:51:01 jobs
+   21  2025-02-06 11:52:30 ping www.google.com > /dev/null $
+   22  2025-02-06 11:53:59 ping www.google.com &
+   23  2025-02-06 11:55:27 jobs
+   24  2025-02-06 11:56:56 ping www.google.com > ping.log &
+   25  2025-02-06 11:58:24 ping www.amazon.com > ping.log &
+   26  2025-02-06 11:59:53 ping www.oreilly.com > ping.log &
+   27  2025-02-06 12:01:21 jobs
+   28  2025-02-06 12:02:50 fg 1
+   29  2025-02-06 12:04:18 history > workshop1log.txt
+   30  2025-02-06 12:05:47 uname
+   31  2025-02-06 12:07:15 uname --options
+   32  2025-02-06 12:08:44 uname --help
+   33  2025-02-06 12:10:12 uname -a
+   34  2025-02-06 12:11:41 uname -s
+   35  2025-02-06 12:13:09 uname -n
+   36  2025-02-06 12:14:38 nano argcnt.sh
+   37  2025-02-06 12:16:06 ./argcnt.sh hello
+   38  2025-02-06 12:17:35 chmod +x argcnt.sh
+   39  2025-02-06 12:19:03 ./argcnt.sh hello
+   40  2025-02-06 12:20:32 ./argcnt.sh this is "real live" test
+   41  2025-02-06 12:22:00 ./argcnt.sh this is a "real live" test
+   42  2025-02-06 12:23:29 nano argcnt.sh
+   43  2025-02-06 12:24:58 ./argcnt.sh this is a "real live" test
+   44  2025-02-06 12:26:26 nano argcnt.sh
+   45  2025-02-06 12:27:55 ./argcnt.sh this is a "real live" test
+   46  2025-02-06 12:29:23 nano argcnt.sh
+   47  2025-02-06 12:30:52 ./argcnt.sh this is a "real live" test
+   48  2025-02-06 12:32:20 nano argcnt.sh
+   49  2025-02-06 12:33:49 ./argcnt.sh this is a "real live" test
+   50  2025-02-06 12:35:17 nano argcnt.sh
+   51  2025-02-06 12:36:46 ./argcnt.sh this is a "real live" test
+   52  2025-02-06 12:38:14 ./mytask.sh &
+   53  2025-02-06 12:39:43 jobs
+   54  2025-02-06 12:41:11 fg 4
+   55  2025-02-06 12:42:40 fg 3
+   56  2025-02-06 12:44:08 bg 3
+   57  2025-02-06 12:45:37 bg 2
+   58  2025-02-06 12:47:05 jobs
+   59  2025-02-06 12:48:34 sudo apt-get install tree
+   60  2025-02-06 12:50:02 tree
+   61  2025-02-06 12:51:31 history >> workshop1log.txt
+    1  2025-02-06 11:23:00 sudo apt-get update
+    2  2025-02-06 11:24:28 sudo apt-get ubuntu-desktop
+    3  2025-02-06 11:25:57 sudo apt-get install ubuntu-desktop
+    4  2025-02-06 11:27:25 sudo reboot now
+    5  2025-02-06 11:28:54 ifconfig
+    6  2025-02-06 11:30:22 sudo apt install net-tools
+    7  2025-02-06 11:31:51 ifconfig
+    8  2025-02-06 11:33:19 ifconfig > ipaddress.txt
+    9  2025-02-06 11:34:48 ifconfig | tee -a ipaddress.txt
+   10  2025-02-06 11:36:16 ipconfig -a > ipaddress.txt
+   11  2025-02-06 11:37:45 ifconfig -a > ipaddress.txt
+   12  2025-02-06 11:39:13 cp /etc/a/* /etc/b/ 2> copyerror.log
+   13  2025-02-06 11:40:42 ls | more
+   14  2025-02-06 11:42:10 bash mytask.sh &
+   15  2025-02-06 11:43:39 ping www.google.com > /dev/null
+   16  2025-02-06 11:45:07 ping www.google.com > /dev/null $
+   17  2025-02-06 11:46:36 ping www.google.com $
+   18  2025-02-06 11:48:04 ping www.google.coma
+   19  2025-02-06 11:49:33 ping www.google.com > ping.log $
+   20  2025-02-06 11:51:01 jobs
+   21  2025-02-06 11:52:30 ping www.google.com > /dev/null $
+   22  2025-02-06 11:53:59 ping www.google.com &
+   23  2025-02-06 11:55:27 jobs
+   24  2025-02-06 11:56:56 ping www.google.com > ping.log &
+   25  2025-02-06 11:58:24 ping www.amazon.com > ping.log &
+   26  2025-02-06 11:59:53 ping www.oreilly.com > ping.log &
+   27  2025-02-06 12:01:21 jobs
+   28  2025-02-06 12:02:50 fg 1
+   29  2025-02-06 12:04:18 history > workshop1log.txt
+   30  2025-02-06 12:05:47 uname
+   31  2025-02-06 12:07:15 uname --options
+   32  2025-02-06 12:08:44 uname --help
+   33  2025-02-06 12:10:12 uname -a
+   34  2025-02-06 12:11:41 uname -s
+   35  2025-02-06 12:13:09 uname -n
+   36  2025-02-06 12:14:38 nano argcnt.sh
+   37  2025-02-06 12:16:06 ./argcnt.sh hello
+   38  2025-02-06 12:17:35 chmod +x argcnt.sh
+   39  2025-02-06 12:19:03 ./argcnt.sh hello
+   40  2025-02-06 12:20:32 ./argcnt.sh this is "real live" test
+   41  2025-02-06 12:22:00 ./argcnt.sh this is a "real live" test
+   42  2025-02-06 12:23:29 nano argcnt.sh
+   43  2025-02-06 12:24:58 ./argcnt.sh this is a "real live" test
+   44  2025-02-06 12:26:26 nano argcnt.sh
+   45  2025-02-06 12:27:55 ./argcnt.sh this is a "real live" test
+   46  2025-02-06 12:29:23 nano argcnt.sh
+   47  2025-02-06 12:30:52 ./argcnt.sh this is a "real live" test
+   48  2025-02-06 12:32:20 nano argcnt.sh
+   49  2025-02-06 12:33:49 ./argcnt.sh this is a "real live" test
+   50  2025-02-06 12:35:17 nano argcnt.sh
+   51  2025-02-06 12:36:46 ./argcnt.sh this is a "real live" test
+   52  2025-02-06 12:38:14 ./mytask.sh &
+   53  2025-02-06 12:39:43 jobs
+   54  2025-02-06 12:41:11 fg 4
+   55  2025-02-06 12:42:40 fg 3
+   56  2025-02-06 12:44:08 bg 3
+   57  2025-02-06 12:45:37 bg 2
+   58  2025-02-06 12:47:05 jobs
+   59  2025-02-06 12:48:34 sudo apt-get install tree
+   60  2025-02-06 12:50:02 tree
+   61  2025-02-06 12:51:31 history >> workshop1log.txt
+   62  2025-02-07 12:43:49 touch frost.txt
+   63  2025-02-07 12:56:20 grep -R -i 'password' /home
+   64  2025-02-07 13:08:51 sudo grep -R -i 'password' /home
+   65  2025-02-07 13:21:22 grep 'T.o' frost.txt
+   66  2025-02-07 13:33:54 egrep 'T.?o' frost.txt
+   67  2025-02-07 13:46:25 grep 'T.?o' frost.txt
+   68  2025-02-07 13:58:56 egrep 'T.*o' frost.txt
+   69  2025-02-07 14:11:28 grep 'T.*o' frost.txt
+   70  2025-02-07 14:23:59 grep 'T.+o' frost.txt
+   71  2025-02-07 14:36:30 egrep 'T.+o' frost.txt
+   72  2025-02-07 14:49:01 egrep 'And be one (stranger|traveler), long i stood' frost.txt
+   73  2025-02-07 15:01:33 egrep -i 'And be one (stranger|traveler), long i stood' frost.txt
+   74  2025-02-07 15:14:04 egrep [a] frost.txt
+   75  2025-02-07 15:26:35 egrep [ab] frost.txt
+   76  2025-02-07 15:39:07 egrep [,] frost.txt
+   77  2025-02-07 15:51:38 egrep [A-F] frost.txt
+   78  2025-02-07 16:04:09 nano tags.txt
+   79  2025-02-07 16:16:41 egrep '<([A-Za-z]*)>.*</\1>' tags.txt
+   80  2025-02-07 16:29:12 cd workshop3
+   81  2025-02-07 16:41:43 ls
+   82  2025-02-07 16:54:14 nano deci.txt
+   83  2025-02-07 17:06:46 egrep '([0-9]*)\.(\1)' deci.txt
+   84  2025-02-07 17:19:17 egrep '([0-9]*).(\1)' deci.txt
+   85  2025-02-07 17:31:48 egrep '[0-9]*\.[0-9]*' deci.txt
+   86  2025-02-07 17:44:20 nano deci.txt
+   87  2025-02-07 17:56:51 egrep '[0-9]*\.[0-9]*' deci.txt
+   88  2025-02-07 18:09:22 nano deci.txt
+   89  2025-02-07 18:21:54 egrep '([0-9]*) is = to (\1)' deci.txt
+   90  2025-02-07 18:34:25 egrep '([0-9]+) is = to (\1)' deci.txt
+   91  2025-02-07 18:46:56 nano deci.txt
+   92  2025-02-07 18:59:27 egrep '([0-9]*) is = to (\1)' deci.txt
+   93  2025-02-07 19:11:59 egrep '^([0-9]*).(\1)$' deci.txt
+   94  2025-02-07 19:24:30 egrep '^([0-9]).(\1)$' deci.txt
+   95  2025-02-07 19:37:01 egrep '^[0-9].*[0-9]$' deci.txt
+   96  2025-02-07 19:49:33 egrep '^([0-9]*).*(\1)$' deci.txt
+   97  2025-02-07 20:02:04 nano ip.txt
+   98  2025-02-07 20:14:35 egrep '^10\.0\.0\.(26|134)$' ip.txt
+   99  2025-02-07 20:27:06 nano ninety.ttx
+  100  2025-02-07 20:39:38 nano ninety.txt
+  101  2025-02-07 20:52:09 egrep '^0x90 {3}&' ninety.txt
+  102  2025-02-07 21:04:40 egrep '^0x90\s* {3}&' ninety.txt
+  103  2025-02-07 21:17:12 egrep '^(0x90*){3}&' ninety.txt
+  104  2025-02-07 21:29:43 egrep '^(0x90* ){3}&' ninety.txt
+  105  2025-02-07 21:42:14 egrep '^(0x90\s*){3}&' ninety.txt
+  106  2025-02-07 21:54:46 egrep '^(0x90*){3,}&' ninety.txt
+  107  2025-02-07 22:07:17 egrep '^(0x90*){3,}' ninety.txt
+  108  2025-02-07 22:19:48 egrep '^(0x90\s*){3,}' ninety.txt
+  109  2025-02-07 22:32:19 history workshop3.txt
+  110  2025-02-07 22:44:51 history > workshop3.txt
+  111  2025-02-07 22:57:22 sudo apt update
+  112  2025-02-07 23:09:53 dpkg -l | grep -E "nginx|mysql-server|net-tools"
+  113  2025-02-07 23:22:25 sudo apt install ngnix mysql-server net-tools -y
+  114  2025-02-07 23:34:56 sudo apt install nginx mysql-server net-tools -y
+  115  2025-02-07 23:47:27 history > logw23.txt
+    1  2025-02-06 11:23:00 sudo apt-get update
+    2  2025-02-06 11:24:28 sudo apt-get ubuntu-desktop
+    3  2025-02-06 11:25:57 sudo apt-get install ubuntu-desktop
+    4  2025-02-06 11:27:25 sudo reboot now
+    5  2025-02-06 11:28:54 ifconfig
+    6  2025-02-06 11:30:22 sudo apt install net-tools
+    7  2025-02-06 11:31:51 ifconfig
+    8  2025-02-06 11:33:19 ifconfig > ipaddress.txt
+    9  2025-02-06 11:34:48 ifconfig | tee -a ipaddress.txt
+   10  2025-02-06 11:36:16 ipconfig -a > ipaddress.txt
+   11  2025-02-06 11:37:45 ifconfig -a > ipaddress.txt
+   12  2025-02-06 11:39:13 cp /etc/a/* /etc/b/ 2> copyerror.log
+   13  2025-02-06 11:40:42 ls | more
+   14  2025-02-06 11:42:10 bash mytask.sh &
+   15  2025-02-06 11:43:39 ping www.google.com > /dev/null
+   16  2025-02-06 11:45:07 ping www.google.com > /dev/null $
+   17  2025-02-06 11:46:36 ping www.google.com $
+   18  2025-02-06 11:48:04 ping www.google.coma
+   19  2025-02-06 11:49:33 ping www.google.com > ping.log $
+   20  2025-02-06 11:51:01 jobs
+   21  2025-02-06 11:52:30 ping www.google.com > /dev/null $
+   22  2025-02-06 11:53:59 ping www.google.com &
+   23  2025-02-06 11:55:27 jobs
+   24  2025-02-06 11:56:56 ping www.google.com > ping.log &
+   25  2025-02-06 11:58:24 ping www.amazon.com > ping.log &
+   26  2025-02-06 11:59:53 ping www.oreilly.com > ping.log &
+   27  2025-02-06 12:01:21 jobs
+   28  2025-02-06 12:02:50 fg 1
+   29  2025-02-06 12:04:18 history > workshop1log.txt
+   30  2025-02-06 12:05:47 uname
+   31  2025-02-06 12:07:15 uname --options
+   32  2025-02-06 12:08:44 uname --help
+   33  2025-02-06 12:10:12 uname -a
+   34  2025-02-06 12:11:41 uname -s
+   35  2025-02-06 12:13:09 uname -n
+   36  2025-02-06 12:14:38 nano argcnt.sh
+   37  2025-02-06 12:16:06 ./argcnt.sh hello
+   38  2025-02-06 12:17:35 chmod +x argcnt.sh
+   39  2025-02-06 12:19:03 ./argcnt.sh hello
+   40  2025-02-06 12:20:32 ./argcnt.sh this is "real live" test
+   41  2025-02-06 12:22:00 ./argcnt.sh this is a "real live" test
+   42  2025-02-06 12:23:29 nano argcnt.sh
+   43  2025-02-06 12:24:58 ./argcnt.sh this is a "real live" test
+   44  2025-02-06 12:26:26 nano argcnt.sh
+   45  2025-02-06 12:27:55 ./argcnt.sh this is a "real live" test
+   46  2025-02-06 12:29:23 nano argcnt.sh
+   47  2025-02-06 12:30:52 ./argcnt.sh this is a "real live" test
+   48  2025-02-06 12:32:20 nano argcnt.sh
+   49  2025-02-06 12:33:49 ./argcnt.sh this is a "real live" test
+   50  2025-02-06 12:35:17 nano argcnt.sh
+   51  2025-02-06 12:36:46 ./argcnt.sh this is a "real live" test
+   52  2025-02-06 12:38:14 ./mytask.sh &
+   53  2025-02-06 12:39:43 jobs
+   54  2025-02-06 12:41:11 fg 4
+   55  2025-02-06 12:42:40 fg 3
+   56  2025-02-06 12:44:08 bg 3
+   57  2025-02-06 12:45:37 bg 2
+   58  2025-02-06 12:47:05 jobs
+   59  2025-02-06 12:48:34 sudo apt-get install tree
+   60  2025-02-06 12:50:02 tree
+   61  2025-02-06 12:51:31 history >> workshop1log.txt
+   62  2025-02-08 05:59:32 touch frost.txt
+   63  2025-02-08 06:00:38 grep -R -i 'password' /home
+   64  2025-02-08 06:01:43 sudo grep -R -i 'password' /home
+   65  2025-02-08 06:02:49 grep 'T.o' frost.txt
+   66  2025-02-08 06:03:54 egrep 'T.?o' frost.txt
+   67  2025-02-08 06:04:59 grep 'T.?o' frost.txt
+   68  2025-02-08 06:06:05 egrep 'T.*o' frost.txt
+   69  2025-02-08 06:07:10 grep 'T.*o' frost.txt
+   70  2025-02-08 06:08:16 grep 'T.+o' frost.txt
+   71  2025-02-08 06:09:21 egrep 'T.+o' frost.txt
+   72  2025-02-08 06:10:27 egrep 'And be one (stranger|traveler), long i stood' frost.txt
+   73  2025-02-08 06:11:32 egrep -i 'And be one (stranger|traveler), long i stood' frost.txt 
+   74  2025-02-08 06:12:38 egrep [a] frost.txt
+   75  2025-02-08 06:13:43 egrep [ab] frost.txt
+   76  2025-02-08 06:14:49 egrep [,] frost.txt
+   77  2025-02-08 06:15:54 egrep [A-F] frost.txt
+   78  2025-02-08 06:16:59 nano tags.txt
+   79  2025-02-08 06:18:05 egrep '<([A-Za-z]*)>.*</\1>' tags.txt
+   80  2025-02-08 06:19:10 cd workshop3
+   81  2025-02-08 06:20:16 ls
+   82  2025-02-08 06:21:21 nano deci.txt
+   83  2025-02-08 06:22:27 egrep '([0-9]*)\.(\1)' deci.txt
+   84  2025-02-08 06:23:32 egrep '([0-9]*).(\1)' deci.txt
+   85  2025-02-08 06:24:38 egrep '[0-9]*\.[0-9]*' deci.txt
+   86  2025-02-08 06:25:43 nano deci.txt
+   87  2025-02-08 06:26:49 egrep '[0-9]*\.[0-9]*' deci.txt
+   88  2025-02-08 06:27:54 nano deci.txt
+   89  2025-02-08 06:28:59 egrep '([0-9]*) is = to (\1)' deci.txt
+   90  2025-02-08 06:30:05 egrep '([0-9]+) is = to (\1)' deci.txt
+   91  2025-02-08 06:31:10 nano deci.txt
+   92  2025-02-08 06:32:16 egrep '([0-9]*) is = to (\1)' deci.txt
+   93  2025-02-08 06:33:21 egrep '^([0-9]*).(\1)$' deci.txt
+   94  2025-02-08 06:34:27 egrep '^([0-9]).(\1)$' deci.txt
+   95  2025-02-08 06:35:32 egrep '^[0-9].*[0-9]$' deci.txt
+   96  2025-02-08 06:36:38 egrep '^([0-9]*).*(\1)$' deci.txt
+   97  2025-02-08 06:37:43 nano ip.txt
+   98  2025-02-08 06:38:49 egrep '^10\.0\.0\.(26|134)$' ip.txt
+   99  2025-02-08 06:39:54 nano ninety.ttx
+  100  2025-02-08 06:40:59 nano ninety.txt
+  101  2025-02-08 06:42:05 egrep '^0x90 {3}&' ninety.txt
+  102  2025-02-08 06:43:10 egrep '^0x90\s* {3}&' ninety.txt
+  103  2025-02-08 06:44:16 egrep '^(0x90*){3}&' ninety.txt
+  104  2025-02-08 06:45:21 egrep '^(0x90* ){3}&' ninety.txt
+  105  2025-02-08 06:46:27 egrep '^(0x90\s*){3}&' ninety.txt
+  106  2025-02-08 06:47:32 egrep '^(0x90*){3,}&' ninety.txt
+  107  2025-02-08 06:48:38 egrep '^(0x90*){3,}' ninety.txt
+  108  2025-02-08 06:49:43 egrep '^(0x90\s*){3,}' ninety.txt
+  109  2025-02-08 06:50:49 history workshop3.txt
+  110  2025-02-08 06:51:54 history > workshop3.txt
+    1  2025-02-06 11:23:00 sudo apt-get update
+    2  2025-02-06 11:24:28 sudo apt-get ubuntu-desktop
+    3  2025-02-06 11:25:57 sudo apt-get install ubuntu-desktop
+    4  2025-02-06 11:27:25 sudo reboot now
+    5  2025-02-06 11:28:54 ifconfig
+    6  2025-02-06 11:30:22 sudo apt install net-tools
+    7  2025-02-06 11:31:51 ifconfig
+    8  2025-02-06 11:33:19 ifconfig > ipaddress.txt
+    9  2025-02-06 11:34:48 ifconfig | tee -a ipaddress.txt
+   10  2025-02-06 11:36:16 ipconfig -a > ipaddress.txt
+   11  2025-02-06 11:37:45 ifconfig -a > ipaddress.txt
+   12  2025-02-06 11:39:13 cp /etc/a/* /etc/b/ 2> copyerror.log
+   13  2025-02-06 11:40:42 ls | more
+   14  2025-02-06 11:42:10 bash mytask.sh &
+   15  2025-02-06 11:43:39 ping www.google.com > /dev/null
+   16  2025-02-06 11:45:07 ping www.google.com > /dev/null $
+   17  2025-02-06 11:46:36 ping www.google.com $
+   18  2025-02-06 11:48:04 ping www.google.coma
+   19  2025-02-06 11:49:33 ping www.google.com > ping.log $
+   20  2025-02-06 11:51:01 jobs
+   21  2025-02-06 11:52:30 ping www.google.com > /dev/null $
+   22  2025-02-06 11:53:59 ping www.google.com &
+   23  2025-02-06 11:55:27 jobs
+   24  2025-02-06 11:56:56 ping www.google.com > ping.log &
+   25  2025-02-06 11:58:24 ping www.amazon.com > ping.log &
+   26  2025-02-06 11:59:53 ping www.oreilly.com > ping.log &
+   27  2025-02-06 12:01:21 jobs
+   28  2025-02-06 12:02:50 fg 1
+   29  2025-02-06 12:04:18 history > workshop1log.txt
+   30  2025-02-06 12:05:47 uname
+   31  2025-02-06 12:07:15 uname --options
+   32  2025-02-06 12:08:44 uname --help
+   33  2025-02-06 12:10:12 uname -a
+   34  2025-02-06 12:11:41 uname -s
+   35  2025-02-06 12:13:09 uname -n
+   36  2025-02-06 12:14:38 nano argcnt.sh
+   37  2025-02-06 12:16:06 ./argcnt.sh hello
+   38  2025-02-06 12:17:35 chmod +x argcnt.sh
+   39  2025-02-06 12:19:03 ./argcnt.sh hello
+   40  2025-02-06 12:20:32 ./argcnt.sh this is "real live" test
+   41  2025-02-06 12:22:00 ./argcnt.sh this is a "real live" test
+   42  2025-02-06 12:23:29 nano argcnt.sh
+   43  2025-02-06 12:24:58 ./argcnt.sh this is a "real live" test
+   44  2025-02-06 12:26:26 nano argcnt.sh
+   45  2025-02-06 12:27:55 ./argcnt.sh this is a "real live" test
+   46  2025-02-06 12:29:23 nano argcnt.sh
+   47  2025-02-06 12:30:52 ./argcnt.sh this is a "real live" test
+   48  2025-02-06 12:32:20 nano argcnt.sh
+   49  2025-02-06 12:33:49 ./argcnt.sh this is a "real live" test
+   50  2025-02-06 12:35:17 nano argcnt.sh
+   51  2025-02-06 12:36:46 ./argcnt.sh this is a "real live" test
+   52  2025-02-06 12:38:14 ./mytask.sh &
+   53  2025-02-06 12:39:43 jobs
+   54  2025-02-06 12:41:11 fg 4
+   55  2025-02-06 12:42:40 fg 3
+   56  2025-02-06 12:44:08 bg 3
+   57  2025-02-06 12:45:37 bg 2
+   58  2025-02-06 12:47:05 jobs
+   59  2025-02-06 12:48:34 sudo apt-get install tree
+   60  2025-02-06 12:50:02 tree
+   61  2025-02-06 12:51:31 history >> workshop1log.txt
+   62  2025-02-08 05:59:32 touch frost.txt
+   63  2025-02-08 06:00:38 grep -R -i 'password' /home
+   64  2025-02-08 06:01:43 sudo grep -R -i 'password' /home
+   65  2025-02-08 06:02:49 grep 'T.o' frost.txt
+   66  2025-02-08 06:03:54 egrep 'T.?o' frost.txt
+   67  2025-02-08 06:04:59 grep 'T.?o' frost.txt
+   68  2025-02-08 06:06:05 egrep 'T.*o' frost.txt
+   69  2025-02-08 06:07:10 grep 'T.*o' frost.txt
+   70  2025-02-08 06:08:16 grep 'T.+o' frost.txt
+   71  2025-02-08 06:09:21 egrep 'T.+o' frost.txt
+   72  2025-02-08 06:10:27 egrep 'And be one (stranger|traveler), long i stood' frost.txt
+   73  2025-02-08 06:11:32 egrep -i 'And be one (stranger|traveler), long i stood' frost.txt 
+   74  2025-02-08 06:12:38 egrep [a] frost.txt
+   75  2025-02-08 06:13:43 egrep [ab] frost.txt
+   76  2025-02-08 06:14:49 egrep [,] frost.txt
+   77  2025-02-08 06:15:54 egrep [A-F] frost.txt
+   78  2025-02-08 06:16:59 nano tags.txt
+   79  2025-02-08 06:18:05 egrep '<([A-Za-z]*)>.*</\1>' tags.txt
+   80  2025-02-08 06:19:10 cd workshop3
+   81  2025-02-08 06:20:16 ls
+   82  2025-02-08 06:21:21 nano deci.txt
+   83  2025-02-08 06:22:27 egrep '([0-9]*)\.(\1)' deci.txt
+   84  2025-02-08 06:23:32 egrep '([0-9]*).(\1)' deci.txt
+   85  2025-02-08 06:24:38 egrep '[0-9]*\.[0-9]*' deci.txt
+   86  2025-02-08 06:25:43 nano deci.txt
+   87  2025-02-08 06:26:49 egrep '[0-9]*\.[0-9]*' deci.txt
+   88  2025-02-08 06:27:54 nano deci.txt
+   89  2025-02-08 06:28:59 egrep '([0-9]*) is = to (\1)' deci.txt
+   90  2025-02-08 06:30:05 egrep '([0-9]+) is = to (\1)' deci.txt
+   91  2025-02-08 06:31:10 nano deci.txt
+   92  2025-02-08 06:32:16 egrep '([0-9]*) is = to (\1)' deci.txt
+   93  2025-02-08 06:33:21 egrep '^([0-9]*).(\1)$' deci.txt
+   94  2025-02-08 06:34:27 egrep '^([0-9]).(\1)$' deci.txt
+   95  2025-02-08 06:35:32 egrep '^[0-9].*[0-9]$' deci.txt
+   96  2025-02-08 06:36:38 egrep '^([0-9]*).*(\1)$' deci.txt
+   97  2025-02-08 06:37:43 nano ip.txt
+   98  2025-02-08 06:38:49 egrep '^10\.0\.0\.(26|134)$' ip.txt
+   99  2025-02-08 06:39:54 nano ninety.ttx
+  100  2025-02-08 06:40:59 nano ninety.txt
+  101  2025-02-08 06:42:05 egrep '^0x90 {3}&' ninety.txt
+  102  2025-02-08 06:43:10 egrep '^0x90\s* {3}&' ninety.txt
+  103  2025-02-08 06:44:16 egrep '^(0x90*){3}&' ninety.txt
+  104  2025-02-08 06:45:21 egrep '^(0x90* ){3}&' ninety.txt
+  105  2025-02-08 06:46:27 egrep '^(0x90\s*){3}&' ninety.txt
+  106  2025-02-08 06:47:32 egrep '^(0x90*){3,}&' ninety.txt
+  107  2025-02-08 06:48:38 egrep '^(0x90*){3,}' ninety.txt
+  108  2025-02-08 06:49:43 egrep '^(0x90\s*){3,}' ninety.txt
+  109  2025-02-08 06:50:49 history workshop3.txt
+  110  2025-02-08 06:51:54 history > workshop3.txt
+  111  2025-02-10 21:52:59 sudo apt update
+  112  2025-02-10 21:52:59 dpkg -l | grep -E "nginx|mysql-server|net-tools"
+  113  2025-02-10 21:52:59 sudo apt install ngnix mysql-server net-tools -y
+  114  2025-02-10 21:52:59 sudo apt install nginx mysql-server net-tools -y
+  115  2025-02-10 21:52:59 nano ubuntubsi47.sh
+  116  2025-02-10 21:52:59 chmod +x ubuntubsi47.sh
+  117  2025-02-10 21:52:59 ./ubuntubsi47.sh
+  118  2025-02-10 21:52:59 nano ubuntubsi47.sh
+  119  2025-02-10 21:52:59 ./ubuntubsi47.sh
+  120  2025-02-10 21:52:59 nano ubuntubsi47.sh
+  121  2025-02-10 21:52:59 ./ubuntubsi47.sh
+  122  2025-02-10 21:52:59 nano ubuntubsi47.sh
+  123  2025-02-10 21:52:59 ./ubuntubsi47.sh
+  124  2025-02-10 21:52:59 nano ubuntu2bsi47.sh
+  125  2025-02-10 21:52:59 hostname
+  126  2025-02-10 21:52:59 nano ubuntu2bsi47.sh
+  127  2025-02-10 21:52:59 ps -ax | wc -l
+  128  2025-02-10 21:52:59 nano ubuntu2bsi47.sh
+  129  2025-02-10 21:52:59 ./ubuntubsi47.sh
+  130  2025-02-10 21:52:59 ./ubuntu2bsi47.sh
+  131  2025-02-10 21:52:59 chmod +x ubuntu2bsi47.sh
+  132  2025-02-10 21:52:59 ./ubuntu2bsi47.sh
+  133  2025-02-10 21:52:59 history > lab1.txt
+  134  2025-02-10 21:52:59 systemctl status ssh
+  135  2025-02-10 21:52:59 sudo apt install openssh-server
+  136  2025-02-10 21:52:59 systemctl status ssh
+  137  2025-02-10 21:52:59 sudo systemctl start ssh
+  138  2025-02-10 21:52:59 systemctl status ssh
+  139  2025-02-10 21:52:59 sudo nano /etc/hosts
+  140  2025-02-10 21:52:59 ping -c 4 127.0.1.1
+  141  2025-02-10 21:52:59 ping -c 4 10.0.2.15
+  142  2025-02-10 21:52:59 sudo nano /etc/hosts
+  143  2025-02-10 21:52:59 ssh kali@kalihost ls /home
+  144  2025-02-10 21:52:59 sudo nano /etc/hosts
+  145  2025-02-10 21:52:59 ssh kali@kalihost ls /home
+  146  2025-02-10 21:52:59 nano argcnt.sh
+  147  2025-02-10 21:52:59 nano argcntprac.sh
+  148  2025-02-10 21:52:59 chmod +x argcntprac.sh
+  149  2025-02-10 21:52:59 ./argcntprac.sh
+  150  2025-02-10 21:52:59 nano argcntprac.sh
+  151  2025-02-10 21:52:59 ./argcntprac.sh hello
+  152  2025-02-10 21:52:59 nano argcntprac.sh
+  153  2025-02-10 21:52:59 ./argcntprac.sh hello
+  154  2025-02-10 21:52:59 nano argcntprac.sh
+  155  2025-02-10 21:52:59 ./argcntprac.sh hello
+  156  2025-02-10 21:52:59 nano argcntprac.sh
+  157  2025-02-10 21:52:59 ./argcntprac.sh this is a "real live" test
+  158  2025-02-10 21:52:59 nano argcntprac.sh  
+  159  2025-02-10 21:52:59 ./argcntprac.sh this is a "real live" test
+  160  2025-02-10 21:52:59 nano argcntprac.sh
+  161  2025-02-10 21:52:59 ./argcntprac.sh this is a "real live" test
+  162  2025-02-10 21:52:59 nano argcntprac.sh
+  163  2025-02-10 21:52:59 ./argcntprac.sh this is a "real live" test
+  164  2025-02-10 21:52:59 nano argcntprac.sh
+  165  2025-02-10 21:52:59 ./argcntprac.sh this is a "real live" test
+  166  2025-02-10 21:52:59 nano deci.sh
+  167  2025-02-10 21:52:59 nano decim.txt
+  168  2025-02-10 21:52:59 nano deci.sh
+  169  2025-02-10 21:52:59 chmod +x decim.sh
+  170  2025-02-10 21:52:59 chmod +x deci.sh
+  171  2025-02-10 21:52:59 ./deci.sh
+  172  2025-02-10 21:52:59 nano deci.sh
+  173  2025-02-10 21:52:59 ./deci.sh
+  174  2025-02-10 21:52:59 nano deci.sh
+  175  2025-02-10 21:52:59 ./deci.sh
+  176  2025-02-10 21:52:59 nano decim.txt
+  177  2025-02-10 21:52:59 nano deci.sh
+  178  2025-02-10 21:52:59 nano bk.txt
+  179  2025-02-10 21:52:59 egrep '([0-9]) is = to (\1)' bk.txt
+  180  2025-02-10 21:52:59 egrep '([0-9]*) is = to (\1)' bk.txt
+  181  2025-02-10 21:52:59 egrep '^([0-9]*).*([0-9]*)$' bk.txt
+  182  2025-02-10 21:52:59 nano n.txt
+  183  2025-02-10 21:52:59 egrep '0x90\s*{3,}' n.txt
+  184  2025-02-10 21:52:59 egrep '^(0x90\s*){3,}' n.txt
+  185  2025-02-10 21:52:59 egrep '(0x90\s*){3,}' n.txt
+  186  2025-02-10 21:52:59 history > logw23.txt
+  187  2025-02-10 21:52:59 ifconfig
+  188  2025-02-10 21:52:59 ls / | more
+  189  2025-02-10 21:52:59 mkdir prac
+  190  2025-02-10 21:52:59 cd prac
+  191  2025-02-10 21:52:59 ping www.google.com > ping.txt &
+  192  2025-02-10 21:52:59 ping www.amazon.com > ping.txt &
+  193  2025-02-10 21:52:59 jobs
+  194  2025-02-10 21:52:59 fg 3
+  195  2025-02-10 21:52:59 jobs
+  196  2025-02-10 21:52:59 fg 4
+  197  2025-02-10 21:52:59 jobs
+  198  2025-02-10 21:52:59 uname
+  199  2025-02-10 21:52:59 uname -a
+  200  2025-02-10 21:52:59 uname -p
+  201  2025-02-10 21:52:59 uname -s
+  202  2025-02-10 21:52:59 uname -n
+  203  2025-02-10 21:52:59 nano osdetect.sh
+  204  2025-02-10 21:52:59 chmod +x osdetect.sh
+  205  2025-02-10 21:52:59 ./osdetect.sh
+  206  2025-02-10 21:52:59 nano osdetect.sh
+  207  2025-02-10 21:52:59 ./osdetect.sh
+  208  2025-02-10 21:52:59 nano osdetect.sh
+  209  2025-02-10 21:52:59 ./osdetect.sh
+  210  2025-02-10 21:52:59 nano osdetect.sh
+  211  2025-02-10 21:52:59 ./osdetect.sh
+  212  2025-02-10 21:52:59 nano osdetect.sh
+  213  2025-02-10 21:52:59 ./osdetect.sh
+  214  2025-02-10 21:52:59 wc -l /etc/passwd
+  215  2025-02-10 21:52:59 wc -l /etc/passwd | awk '{print $1'
+  216  2025-02-10 21:52:59 wc -l /etc/passwd | awk '{print $1}'
+  217  2025-02-10 21:52:59 grep 'nologin' /etc/passwd | wc -l
+  218  2025-02-10 21:52:59 grep 'sudo' /etc/group | wc -l
+  219  2025-02-10 21:52:59 grep '^sudo:.*' /etc/group | wc -l
+  220  2025-02-10 21:52:59 uname -a
+  221  2025-02-10 21:52:59 hostname
+  222  2025-02-10 21:52:59 uptime
+  223  2025-02-10 21:52:59 uptime -p
+  224  2025-02-10 21:52:59 ps -ax
+  225  2025-02-10 21:52:59 ps -ax | wc -l
+  226  2025-02-10 21:52:59 find /var/log -type -f -name 'log' 2> /dev/null | wc -l
+  227  2025-02-10 21:52:59 find /var/log -type -f -name '*log*' 2> /dev/null | wc -l
+  228  2025-02-10 21:52:59 history > loglab1latest.txt
+    1  2025-02-12 15:13:25 hostname -I
+    2  2025-02-12 15:13:25 sudo -i
+    3  2025-02-12 15:13:53 sudo mount -t vboxsf shared ~/shared
+    4  2025-02-12 15:43:54 source ~/.bashrc
+    5  2025-02-12 15:44:20 export HISTTIMEFORMAT="%F %T "
+    6  2025-02-12 15:45:20 hostname -I
+    7  2025-02-12 15:48:40 ping -c 4 192.168.56.102
+    8  2025-02-12 15:48:57 history
+    9  2025-02-12 16:38:18 cd midtermbsi47
+   10  2025-02-12 16:38:22 mkdir part1
+   11  2025-02-12 16:38:25 mkdir part2
+   12  2025-02-12 16:38:28 mkdir part3
+   13  2025-02-12 16:38:30 mkdir part4
+   14  2025-02-12 16:38:32 mkdir part5
+   15  2025-02-12 16:38:35 mkdir part6
+   16  2025-02-12 16:40:32 cd part2
+   17  2025-02-12 16:40:56 nano bdedbsi47.sh
+   18  2025-02-12 16:42:43 chmod +x bdedbsi47.sh
+   19  2025-02-12 16:42:58 ./bdedbsi47.sh
+   20  2025-02-12 16:43:03 nano bdedbsi47.sh
+   21  2025-02-12 16:44:22 ./bdedbsi47.sh
+   22  2025-02-12 16:44:42 nano bdedbsi47.sh
+   23  2025-02-12 16:45:01 ./bdedbsi47.sh
+   24  2025-02-12 16:45:14 nano bdedbsi47.sh
+   25  2025-02-12 16:45:41 ./bdedbsi47.sh
+   26  2025-02-12 16:46:07 nano bdedbsi47.sh
+   27  2025-02-12 16:46:20 ./bdedbsi47.sh
+   28  2025-02-12 16:48:48 cd ..
+   29  2025-02-12 16:48:53 cd part1
+   30  2025-02-12 16:49:05 cd ..
+   31  2025-02-12 16:49:19 nano /etc/hosts
+   32  2025-02-12 16:52:17 sudo nano /etc/hosts
+   33  2025-02-12 16:57:39 ssh bsi47@kalihosts
+   34  2025-02-12 16:57:49 systemctl ssh start
+   35  2025-02-12 16:57:56 systemctl start ssh
+   36  2025-02-12 16:58:11 systemctl status ssh
+   37  2025-02-12 16:59:26 ssh bsi47@kalihosts
+   38  2025-02-12 17:00:35 nano findfilesbsi47.sh
+   39  2025-02-12 17:01:49 chmod +x findfilesbsi47.sh
+   40  2025-02-12 17:01:58 ./findfilesbsi47.sh
+   41  2025-02-12 17:10:22 cd midtermbsi47
+   42  2025-02-12 17:10:31 cd part3
+   43  2025-02-12 17:11:11 nano ipmatchbsi47.sh
+   44  2025-02-12 17:12:48 chmod +x ipmatchbsi47.sh
+   45  2025-02-12 17:12:56 ./ipmatchbsi47.sh
+   46  2025-02-12 17:14:29 nano ipmatchbsi47.sh
+   47  2025-02-12 17:16:55 ./ipmatchbsi47.sh
+   48  2025-02-12 17:16:59 nano ipmatchbsi47.sh
+   49  2025-02-12 17:17:06 ./ipmatchbsi47.sh
+   50  2025-02-12 17:17:16 nano ipmatchbsi47.sh
+   51  2025-02-12 17:19:42 ./ipmatchbsi47.sh
+   52  2025-02-12 17:19:45 nano ipmatchbsi47.sh
+   53  2025-02-12 17:20:21 cd ..
+   54  2025-02-12 17:21:01 tar -czvf midtermbsi47.tar.gz midtermbsi47/
+   55  2025-02-12 17:24:44 cd midtermbsi47
+   56  2025-02-12 17:24:50 cd part3
+   57  2025-02-12 17:24:52 ls
+   58  2025-02-12 17:25:02 nano ipmatchbsi47.sh
+   59  2025-02-12 17:25:30 ./ipmatchbsi47.sh
+   60  2025-02-12 17:25:35 nano ipmatchbsi47.sh
+   61  2025-02-12 17:29:01 ./ipmatchbsi47.sh
+   62  2025-02-12 17:29:05 nano ipmatchbsi47.sh
+   63  2025-02-12 17:31:43 ./ipmatchbsi47.sh
+   64  2025-02-12 17:32:34 cd ..
+   65  2025-02-12 17:33:54 cd midtermbsi47
+   66  2025-02-12 17:34:11 cd part4
+   67  2025-02-12 17:34:19 man
+   68  2025-02-12 17:34:24 man man
+   69  2025-02-12 17:35:43 nano asciimatchbsi47.sh
+   70  2025-02-12 17:38:00 chmod +x asciimatchbsi47.sh
+   71  2025-02-12 17:38:10 ./asciimatchbsi47.sh
+   72  2025-02-12 17:38:17 nano asciimatchbsi47.sh
+   73  2025-02-12 17:38:32 ./asciimatchbsi47.sh
+   74  2025-02-12 17:38:45 nano asciimatchbsi47.sh
+   75  2025-02-12 17:38:58 ./asciimatchbsi47.sh
+   76  2025-02-12 17:39:06 nano asciimatchbsi47.sh
+   77  2025-02-12 17:39:59 ./asciimatchbsi47.sh
+   78  2025-02-12 17:40:59 nano asciimatchbsi47.sh
+   79  2025-02-12 17:41:22 ./asciimatchbsi47.sh
+   80  2025-02-12 17:41:30 nano asciimatchbsi47.sh
+   81  2025-02-12 17:42:27 ./asciimatchbsi47.sh
+   82  2025-02-12 17:42:30 nano asciimatchbsi47.sh
+   83  2025-02-12 17:42:40 ./asciimatchbsi47.sh
+   84  2025-02-12 17:42:46 nano asciimatchbsi47.sh
+   85  2025-02-12 17:43:18 ./asciimatchbsi47.sh
+   86  2025-02-12 17:43:20 nano asciimatchbsi47.sh
+   87  2025-02-12 17:43:28 ./asciimatchbsi47.sh
+   88  2025-02-12 17:43:42 nano asciimatchbsi47.sh
+   89  2025-02-12 17:44:33 ./asciimatchbsi47.sh
+   90  2025-02-12 17:44:36 nano asciimatchbsi47.sh
+   91  2025-02-12 17:44:55 ./asciimatchbsi47.sh
+   92  2025-02-12 17:44:57 nano asciimatchbsi47.sh
+   93  2025-02-12 17:46:56 ./asciimatchbsi47.sh
+   94  2025-02-12 17:47:08 nano asciimatchbsi47.sh
+   95  2025-02-12 17:47:15 ./asciimatchbsi47.sh
+   96  2025-02-12 17:49:27 nano asciimatchbsi47.sh
+   97  2025-02-12 17:49:54 ./asciimatchbsi47.sh
+   98  2025-02-12 17:50:55 nano asciimatchbsi47.sh
+   99  2025-02-12 17:51:33 ./asciimatchbsi47.sh
+  100  2025-02-12 17:51:39 nano asciimatchbsi47.sh
+  101  2025-02-12 17:51:57 ./asciimatchbsi47.sh
+  102  2025-02-12 17:52:09 nano asciimatchbsi47.sh
+  103  2025-02-12 17:52:36 ./asciimatchbsi47.sh
+  104  2025-02-12 17:52:58 cd ..
+  105  2025-02-12 17:53:03 cd part 5
+  106  2025-02-12 17:53:08 cd part5
+  107  2025-02-12 17:53:23 nano secomatchbsi47.sh
+  108  2025-02-12 17:56:43 chmod +x secomatchbsi47.sh 
+  109  2025-02-12 17:56:53 ./secomatchbsi47.sj
+  110  2025-02-12 17:56:55 ./secomatchbsi47.sh
+  111  2025-02-12 17:56:59 nano secomatchbsi47.sh
+  112  2025-02-12 17:58:18 ./secomatchbsi47.sh
+  113  2025-02-12 17:58:19 nano secomatchbsi47.sh
+  114  2025-02-12 18:01:05 ./secomatchbsi47.sh
+  115  2025-02-12 18:01:19 nano secomatchbsi47.sh
+  116  2025-02-12 18:03:22 cd ..
+  117  2025-02-12 18:04:27 history
+  118  2025-02-12 18:05:04 history >> midtermubuntuhistorybsi47.txt
+    1  2025-03-19 15:34:56 hostname -I
+    2  2025-03-19 15:34:56 sudo -i
+    3  2025-03-19 15:34:56 python3 -V
+    4  2025-03-19 15:34:56 sudo apt -y install python3
+    5  2025-03-19 15:34:56 sudo apt-get install git
+    6  2025-03-19 15:34:56 ./secomatchbsi47.sh
+    7  2025-03-19 15:35:09 mkdir Lab3bsi47
+    8  2025-03-19 15:35:23 cd Lab3bsi47
+    9  2025-03-19 15:35:38 mkdir part1
+   10  2025-03-19 15:35:40 mkdir part2
+   11  2025-03-19 15:35:43 mkdir part3
+   12  2025-03-19 15:35:56 cd part1
+   13  2025-03-19 15:36:03 cd ..
+   14  2025-03-19 15:36:31 source ~/.bashrc
+   15  2025-03-19 15:36:52 export HISTTIMEFORMAT="%F %T "
+   16  2025-03-19 15:37:04 cd Lab3bsi47
+   17  2025-03-19 15:37:06 cd part1
+   18  2025-03-19 15:37:27 nano passwordbsi47.py
+   19  2025-03-19 15:48:52 cd ..
+   20  2025-03-19 15:48:56 ls
+   21  2025-03-19 15:49:58 cd git
+   22  2025-03-19 15:50:32 ls
+   23  2025-03-19 15:50:37 cd Git
+   24  2025-03-19 15:50:55 ls
+   25  2025-03-19 15:51:17 cd PythonForCyberSecurity
+   26  2025-03-19 15:51:19 ls
+   27  2025-03-19 15:51:29 cd Lab3bsi47
+   28  2025-03-19 15:51:30 ls
+   29  2025-03-19 15:51:34 cd part2
+   30  2025-03-19 15:51:50 ./primebsi47.py
+   31  2025-03-19 15:52:06 chmod +x primebsi47.py
+   32  2025-03-19 15:52:08 ./primebsi47.py
+   33  2025-03-19 16:04:30 cd ..
+   34  2025-03-19 16:04:37 cd part3
+   35  2025-03-19 16:04:41 ls
+   36  2025-03-19 16:04:54 chmod +x inversebsi47.py
+   37  2025-03-19 16:05:08 ./inversebsi47.py
+   38  2025-03-19 16:07:31 cd ..
+   39  2025-03-19 16:08:05 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   40  2025-03-19 16:08:37 tree Lab3bsi47
+   41  2025-03-19 16:08:48 sudo apt install tree
+   42  2025-03-19 16:08:58 tree Lab3bsi47
+   43  2025-03-19 16:12:06 history >> ubuntulogbsi47.txt
+    1  2025-03-19 15:34:56 hostname -I
+    2  2025-03-19 15:34:56 sudo -i
+    3  2025-03-19 15:34:56 python3 -V
+    4  2025-03-19 15:34:56 sudo apt -y install python3
+    5  2025-03-19 15:34:56 sudo apt-get install git
+    6  2025-03-19 15:34:56 ./secomatchbsi47.sh
+    7  2025-03-19 15:35:09 mkdir Lab3bsi47
+    8  2025-03-19 15:35:23 cd Lab3bsi47
+    9  2025-03-19 15:35:38 mkdir part1
+   10  2025-03-19 15:35:40 mkdir part2
+   11  2025-03-19 15:35:43 mkdir part3
+   12  2025-03-19 15:35:56 cd part1
+   13  2025-03-19 15:36:03 cd ..
+   14  2025-03-19 15:36:31 source ~/.bashrc
+   15  2025-03-19 15:36:52 export HISTTIMEFORMAT="%F %T "
+   16  2025-03-19 15:37:04 cd Lab3bsi47
+   17  2025-03-19 15:37:06 cd part1
+   18  2025-03-19 15:37:27 nano passwordbsi47.py
+   19  2025-03-19 15:48:52 cd ..
+   20  2025-03-19 15:48:56 ls
+   21  2025-03-19 15:49:58 cd git
+   22  2025-03-19 15:50:32 ls
+   23  2025-03-19 15:50:37 cd Git
+   24  2025-03-19 15:50:55 ls
+   25  2025-03-19 15:51:17 cd PythonForCyberSecurity
+   26  2025-03-19 15:51:19 ls
+   27  2025-03-19 15:51:29 cd Lab3bsi47
+   28  2025-03-19 15:51:30 ls
+   29  2025-03-19 15:51:34 cd part2
+   30  2025-03-19 15:51:50 ./primebsi47.py
+   31  2025-03-19 15:52:06 chmod +x primebsi47.py
+   32  2025-03-19 15:52:08 ./primebsi47.py
+   33  2025-03-19 16:04:30 cd ..
+   34  2025-03-19 16:04:37 cd part3
+   35  2025-03-19 16:04:41 ls
+   36  2025-03-19 16:04:54 chmod +x inversebsi47.py
+   37  2025-03-19 16:05:08 ./inversebsi47.py
+   38  2025-03-19 16:07:31 cd ..
+   39  2025-03-19 16:08:05 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   40  2025-03-19 16:08:37 tree Lab3bsi47
+   41  2025-03-19 16:08:48 sudo apt install tree
+   42  2025-03-19 16:08:58 tree Lab3bsi47
+   43  2025-03-19 16:12:06 history >> ubuntulogbsi47.txt
+    1  2025-03-19 15:34:56 hostname -I
+    2  2025-03-19 15:34:56 sudo -i
+    3  2025-03-19 15:34:56 python3 -V
+    4  2025-03-19 15:34:56 sudo apt -y install python3
+    5  2025-03-19 15:34:56 sudo apt-get install git
+    6  2025-03-19 15:34:56 ./secomatchbsi47.sh
+    7  2025-03-19 15:35:09 mkdir Lab3bsi47
+    8  2025-03-19 15:35:23 cd Lab3bsi47
+    9  2025-03-19 15:35:38 mkdir part1
+   10  2025-03-19 15:35:40 mkdir part2
+   11  2025-03-19 15:35:43 mkdir part3
+   12  2025-03-19 15:35:56 cd part1
+   13  2025-03-19 15:36:03 cd ..
+   14  2025-03-19 15:36:31 source ~/.bashrc
+   15  2025-03-19 15:36:52 export HISTTIMEFORMAT="%F %T "
+   16  2025-03-19 15:37:04 cd Lab3bsi47
+   17  2025-03-19 15:37:06 cd part1
+   18  2025-03-19 15:37:27 nano passwordbsi47.py
+   19  2025-03-19 15:48:52 cd ..
+   20  2025-03-19 15:48:56 ls
+   21  2025-03-19 15:49:58 cd git
+   22  2025-03-19 15:50:32 ls
+   23  2025-03-19 15:50:37 cd Git
+   24  2025-03-19 15:50:55 ls
+   25  2025-03-19 15:51:17 cd PythonForCyberSecurity
+   26  2025-03-19 15:51:19 ls
+   27  2025-03-19 15:51:29 cd Lab3bsi47
+   28  2025-03-19 15:51:30 ls
+   29  2025-03-19 15:51:34 cd part2
+   30  2025-03-19 15:51:50 ./primebsi47.py
+   31  2025-03-19 15:52:06 chmod +x primebsi47.py
+   32  2025-03-19 15:52:08 ./primebsi47.py
+   33  2025-03-19 16:04:30 cd ..
+   34  2025-03-19 16:04:37 cd part3
+   35  2025-03-19 16:04:41 ls
+   36  2025-03-19 16:04:54 chmod +x inversebsi47.py
+   37  2025-03-19 16:05:08 ./inversebsi47.py
+   38  2025-03-19 16:07:31 cd ..
+   39  2025-03-19 16:08:05 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   40  2025-03-19 16:08:37 tree Lab3bsi47
+   41  2025-03-19 16:08:48 sudo apt install tree
+   42  2025-03-19 16:08:58 tree Lab3bsi47
+   43  2025-03-19 16:12:06 history >> ubuntulogbsi47.txt
+   44  2025-03-19 16:13:12 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   45  2025-03-19 16:36:42 history >> ubuntulogbsi47.txt

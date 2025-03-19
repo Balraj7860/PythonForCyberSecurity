@@ -1,0 +1,88 @@
+    1  2025-03-19 15:34:56 hostname -I
+    2  2025-03-19 15:34:56 sudo -i
+    3  2025-03-19 15:34:56 python3 -V
+    4  2025-03-19 15:34:56 sudo apt -y install python3
+    5  2025-03-19 15:34:56 sudo apt-get install git
+    6  2025-03-19 15:34:56 ./secomatchbsi47.sh
+    7  2025-03-19 15:35:09 mkdir Lab3bsi47
+    8  2025-03-19 15:35:23 cd Lab3bsi47
+    9  2025-03-19 15:35:38 mkdir part1
+   10  2025-03-19 15:35:40 mkdir part2
+   11  2025-03-19 15:35:43 mkdir part3
+   12  2025-03-19 15:35:56 cd part1
+   13  2025-03-19 15:36:03 cd ..
+   14  2025-03-19 15:36:31 source ~/.bashrc
+   15  2025-03-19 15:36:52 export HISTTIMEFORMAT="%F %T "
+   16  2025-03-19 15:37:04 cd Lab3bsi47
+   17  2025-03-19 15:37:06 cd part1
+   18  2025-03-19 15:37:27 nano passwordbsi47.py
+   19  2025-03-19 15:48:52 cd ..
+   20  2025-03-19 15:48:56 ls
+   21  2025-03-19 15:49:58 cd git
+   22  2025-03-19 15:50:32 ls
+   23  2025-03-19 15:50:37 cd Git
+   24  2025-03-19 15:50:55 ls
+   25  2025-03-19 15:51:17 cd PythonForCyberSecurity
+   26  2025-03-19 15:51:19 ls
+   27  2025-03-19 15:51:29 cd Lab3bsi47
+   28  2025-03-19 15:51:30 ls
+   29  2025-03-19 15:51:34 cd part2
+   30  2025-03-19 15:51:50 ./primebsi47.py
+   31  2025-03-19 15:52:06 chmod +x primebsi47.py
+   32  2025-03-19 15:52:08 ./primebsi47.py
+   33  2025-03-19 16:04:30 cd ..
+   34  2025-03-19 16:04:37 cd part3
+   35  2025-03-19 16:04:41 ls
+   36  2025-03-19 16:04:54 chmod +x inversebsi47.py
+   37  2025-03-19 16:05:08 ./inversebsi47.py
+   38  2025-03-19 16:07:31 cd ..
+   39  2025-03-19 16:08:05 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   40  2025-03-19 16:08:37 tree Lab3bsi47
+   41  2025-03-19 16:08:48 sudo apt install tree
+   42  2025-03-19 16:08:58 tree Lab3bsi47
+   43  2025-03-19 16:12:06 history >> ubuntulogbsi47.txt
+    1  2025-03-19 15:34:56 hostname -I
+    2  2025-03-19 15:34:56 sudo -i
+    3  2025-03-19 15:34:56 python3 -V
+    4  2025-03-19 15:34:56 sudo apt -y install python3
+    5  2025-03-19 15:34:56 sudo apt-get install git
+    6  2025-03-19 15:34:56 ./secomatchbsi47.sh
+    7  2025-03-19 15:35:09 mkdir Lab3bsi47
+    8  2025-03-19 15:35:23 cd Lab3bsi47
+    9  2025-03-19 15:35:38 mkdir part1
+   10  2025-03-19 15:35:40 mkdir part2
+   11  2025-03-19 15:35:43 mkdir part3
+   12  2025-03-19 15:35:56 cd part1
+   13  2025-03-19 15:36:03 cd ..
+   14  2025-03-19 15:36:31 source ~/.bashrc
+   15  2025-03-19 15:36:52 export HISTTIMEFORMAT="%F %T "
+   16  2025-03-19 15:37:04 cd Lab3bsi47
+   17  2025-03-19 15:37:06 cd part1
+   18  2025-03-19 15:37:27 nano passwordbsi47.py
+   19  2025-03-19 15:48:52 cd ..
+   20  2025-03-19 15:48:56 ls
+   21  2025-03-19 15:49:58 cd git
+   22  2025-03-19 15:50:32 ls
+   23  2025-03-19 15:50:37 cd Git
+   24  2025-03-19 15:50:55 ls
+   25  2025-03-19 15:51:17 cd PythonForCyberSecurity
+   26  2025-03-19 15:51:19 ls
+   27  2025-03-19 15:51:29 cd Lab3bsi47
+   28  2025-03-19 15:51:30 ls
+   29  2025-03-19 15:51:34 cd part2
+   30  2025-03-19 15:51:50 ./primebsi47.py
+   31  2025-03-19 15:52:06 chmod +x primebsi47.py
+   32  2025-03-19 15:52:08 ./primebsi47.py
+   33  2025-03-19 16:04:30 cd ..
+   34  2025-03-19 16:04:37 cd part3
+   35  2025-03-19 16:04:41 ls
+   36  2025-03-19 16:04:54 chmod +x inversebsi47.py
+   37  2025-03-19 16:05:08 ./inversebsi47.py
+   38  2025-03-19 16:07:31 cd ..
+   39  2025-03-19 16:08:05 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   40  2025-03-19 16:08:37 tree Lab3bsi47
+   41  2025-03-19 16:08:48 sudo apt install tree
+   42  2025-03-19 16:08:58 tree Lab3bsi47
+   43  2025-03-19 16:12:06 history >> ubuntulogbsi47.txt
+   44  2025-03-19 16:13:12 tar -czvf Lab3bsi47.tar.gz Lab3bsi47/
+   45  2025-03-19 16:36:42 history >> ubuntulogbsi47.txt
