@@ -1,0 +1,5 @@
+PING 192.168.1.254 (192.168.1.254): 56 data bytes
+
+--- 192.168.1.254 ping statistics ---
+1 packets transmitted, 1 packets received, 0.0% packet loss, 1 packets out of wait time
+round-trip min/avg/max/stddev = 6.828/6.828/6.828/0.000 ms
