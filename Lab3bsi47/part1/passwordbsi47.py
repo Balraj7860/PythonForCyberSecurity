@@ -34,11 +34,11 @@ def password_check(passwdbsi47):
 def main():
 	passwd = ['W4$acxyH7BtQiU3er','Zk7i$F8uo#Aq','L#1npOdATe2rjy','vE@XsLwzKmy','cBa6Hg7@uY3WjR','QpiTcS7Ozlk2']
 	
-    for i in range(len(passwd)):
-	    if (password_check(passwd[i])):
-		    print("Password is valid")
-	    else:
-		    print("Invalid Password !!")
+    # for i in range(len(passwd)):
+	#     if (password_check(passwd[i])):
+	# 	    print("Password is valid")
+	#     else:
+	# 	    print("Invalid Password !!")
 		
 # Driver Code	 
 if __name__ == '__main__':
