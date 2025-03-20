@@ -29,7 +29,7 @@ def ping(ip):
 # __________________________________________________________
 
 f = open("ipaddress.txt","w")
-ip_prefix = "192.168.1."
+ip_prefix = "192.168.56."
 for i in range(254):
     ip  = ip_prefix + str(i+1) + "\n"
     f.write(ip)
